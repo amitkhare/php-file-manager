@@ -1,0 +1,12 @@
+a, a:hover {
+  text-decoration: none;
+  color:#111;
+}
+
+.jumbotron {
+  color: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}

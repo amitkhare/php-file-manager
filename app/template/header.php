@@ -6,15 +6,11 @@
     <title><?php echo $title.' | '.$siteTitle; ?></title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <link rel="stylesheet" href="main.css" type="text/css" />
     <style>
-        .jumbotron {
-          color: white;
-          background-image: url("<?php echo $bannerURL; ?>");
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-          height: 200px;
-        }
+      .jumbotron {
+        background-image: url("<?php echo $bannerURL; ?>");
+      }
     </style>
 </head>
 <body>

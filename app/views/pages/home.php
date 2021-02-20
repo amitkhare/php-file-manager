@@ -18,12 +18,12 @@
                     
                     <?php if(is_dir($currDirectory.$entry)) { ?>
 
-                        <div class="card mt-1" style="overflow:hidden;">
-                          <a class="" style="text-decoration: none;" href="<?php echo '/?p='.$p.'&d='.urlencode($d.$entry); ?>">
+                        <div class="card mb-4" style="overflow:hidden;">
+                          <a class="" href="<?php echo '/?p='.$p.'&d='.urlencode($d.$entry); ?>">
                           
                             <div style="overflow:hidden;">
                               <img class="card-img-top p-4"  src="<?php echo '/?p=thumbnail&f=folder.png'; ?>">
-                              <h4><?php echo ucwords(str_replace('-', ' ', $entry)); ?></h4>
+                              <h6><?php echo ucwords(str_replace('-', ' ', $entry)); ?></h6>
                             </div>
                           
                           </a>
@@ -31,11 +31,11 @@
                         
                     <?php } else { ?>
                             
-                            <div class="card mt-1" style="overflow:hidden;">
-                              <a class="" style="text-decoration: none;" href="<?php echo '/?p=get&f='.urlencode($d.$entry).''; ?>">
+                            <div class="card mb-4" style="overflow:hidden;">
+                              <a class="" href="<?php echo '/?p=get&f='.urlencode($d.$entry).''; ?>">
                                 <div style="overflow:hidden;">
                                   <img class="card-img-top p-4"  src="<?php echo '/?p=thumbnail&f='.urlencode($d.$entry).''; ?>">
-                                  <h4><?php echo ucwords(str_replace('-', ' ', $entry)); ?></h4>
+                                  <h6><?php echo ucwords(str_replace('-', ' ', $entry)); ?></h6>
                                 </div>
                               </a>
                             </div>
