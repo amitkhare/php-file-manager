@@ -23,7 +23,7 @@ if(file_exists($thumbnailIconsDir.$nameWithoutExtension.'.png')){
 if(!file_exists($filename)){
     // file not found 
     // show generic thumbnail
-    $im = new imagick($thumbnailIconsDir."default.png");
+    $im = new imagick($thumbnailIconsDir.$extension.".png");
     echo $im;
     exit;
 } else {
@@ -31,7 +31,7 @@ if(!file_exists($filename)){
     $im->readImage($filename . '[0]');
     $im->setImageFormat('png');
   } catch (Exception $e) {
-    $im = new imagick($thumbnailIconsDir."default.png");
+    $im = new imagick($thumbnailIconsDir.$extension.".png");
     echo $im;
     exit;
   }

@@ -14,11 +14,11 @@
                 
                 </div>
                 <?php foreach($entries as $entry) { ?>
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6 text-center">
+                <div class="col-lg-3 col-md-4 col-sm-6 text-center">
                     
                     <?php if(is_dir($currDirectory.$entry)) { ?>
 
-                        <div class="card mt-1" style="overflow:hidden;">
+                        <div class="card mt-2" style="overflow:hidden;">
                           <a class="" style="text-decoration: none;" href="<?php echo '/?p='.$p.'&d='.urlencode($d.$entry); ?>">
                           
                             <div style="overflow:hidden;">
@@ -31,7 +31,7 @@
                         
                     <?php } else { ?>
                             
-                            <div class="card mt-1" style="overflow:hidden;">
+                            <div class="card mt-2" style="overflow:hidden;">
                               <a class="" style="text-decoration: none;" href="<?php echo '/?p=get&f='.urlencode($d.$entry).''; ?>">
                                 <div style="overflow:hidden;">
                                   <img class="card-img-top p-4"  src="<?php echo '/?p=thumbnail&f='.urlencode($d.$entry).''; ?>">
